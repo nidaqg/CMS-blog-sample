@@ -1,0 +1,16 @@
+.localCard:hover {
+  cursor: pointer; 
+  box-shadow: 5px 5px 5px rgb(206, 181, 185);
+
+}
+
+.localBtn:hover {
+   background-color: rgb(230, 157, 169);
+   color: black;
+   border: white;
+}
+
+.colColor {
+ background-color: rgb(230, 157, 169);
+}
+
