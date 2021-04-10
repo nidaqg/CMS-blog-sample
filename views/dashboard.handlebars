@@ -1,0 +1,61 @@
+<header>
+  <img src="/images/header.png" class="img-fluid" alt="header">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <section class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="/images/logo.png" alt="logo" class="rounded-circle" width="50px">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <section class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <section class="navbar-nav">
+          <a class="nav-link" aria-current="page" href="/">Home</a>
+          {{#if logged_in}}
+          <a class="nav-link" id="logout" href="#">logout</a>
+          <a class="nav-link" href="/dashboard">Dashboard</a>
+          {{else}}
+          <a class="nav-link" href="/login">login/signup</a>
+          {{/if}}
+        </section>
+      </section>
+    </section>
+  </nav>
+</header>
+
+<main class="container-fluid mt-3 mb-3">
+  <section class="row text-center justify-content-center">
+
+    <section class="col-md-9">
+      <section class="row text-center justify-content-center">
+        <section class="row row-cols-1 row-cols-lg-2 g-3">
+
+
+
+          {{#each posts as |blogpost|}}
+          <section class="col">
+            <section class="card m-2 localCard">
+              <section class="card-body mb-3">
+                <h5 class="text-center card-title">{{blogpost.post_title}}</h5>
+                <h6 class="text-center card-subtitle mb-2 text-muted">Written by: {{user.username}}</h6>
+                <h6 class="text-center card-subtitle mb-2 text-muted">{{format_date blogpost.date_created}}</h6>
+                <p class="card-text">{{blogpost.content}}</p>
+              </section>
+              <section class="mb-3">
+                <a href="/edit/{{blogpost.id}}" class="btn btn-dark localBtn">Edit or Delete post</a>
+              </section>
+            </section>
+          </section>
+          {{/each}}
+
+        </section>
+      </section>
+    </section>
+
+    <section class="row justify-content-center text-center mt-4">
+      <button id="newPost" class="btn btn-dark localBtn btn-lg mb-3">Create New Post</button>
+    </section>
+  </section>
+</main>
+<script src="/js/dashboard.js"></script>

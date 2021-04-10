@@ -1,0 +1,16 @@
+[
+    {
+      "post_title": "Blog Post",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mi velit, consectetur sit amet accumsan id, dictum in tellus. Duis non efficitur urna."
+    },
+    {
+      "post_title": "Blog Post 2",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mi velit, consectetur sit amet accumsan id, dictum in tellus. Duis non efficitur urna."
+
+    },
+    {
+      "post_title": "Blog Post 3",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mi velit, consectetur sit amet accumsan id, dictum in tellus. Duis non efficitur urna."
+    }
+  ]
+  
