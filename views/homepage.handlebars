@@ -2,7 +2,7 @@
   <img src="/images/header.png" class="img-fluid" alt="header">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <section class="container-fluid">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="/">
         <img src="/images/logo.png" alt="logo" class="rounded-circle" width="50px">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -29,22 +29,22 @@
 
     <section class="col-md-9">
       <section class="row text-center justify-content-center">
-        <section class="row row-cols-1 row-cols-lg-2 g-3">
+        <section class="row row-cols-1 row-cols-lg-2 g-4">
 
           {{#each blogposts as |blogpost|}}
 
           <section class="col">
-            <section class="card m-2 titleCard localCard">
+
+            <section class="card m-2 hvr-grow-shadow">
+              <a class="card-block stretched-link text-decoration-none" href="/blogpost/{{blogpost.id}}">
               <section class="card-body text-center">
-                <h5 class="text-center card-title">{{blogpost.post_title}}</h5>
+                <h5 class="text-center text-dark card-title">{{blogpost.post_title}}</h5>
                 <h6 class="text-center card-subtitle mb-2 text-muted">Written by: {{blogpost.user.username}}</h6>
                 <h6 class="text-center card-subtitle mb-2 text-muted">{{format_date blogpost.date_created}}</h6>
-                <p class="card-text">{{blogpost.content}}</p>
-                <section>
-                  <a href="/blogpost/{{blogpost.id}}" class="btn localBtn btn-dark">Read More</a>
-                </section>
               </section>
+              </a>
             </section>
+
           </section>
           {{/each}}
 

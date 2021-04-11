@@ -16,7 +16,7 @@ const response = await fetch(`/api/comment`, {
   });
 
   if (response.ok) {
-    document.location.replace('/');
+    document.location.reload();
   } else {
     alert('Failed to publish!');
   }
