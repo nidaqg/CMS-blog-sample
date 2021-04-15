@@ -83,6 +83,6 @@ SOFTWARE.
 
 The repo for this project can be found here: https://github.com/nidaqg/CMS-blog-sample
 
-Heroku link for ddeployed project can be found at: 
+Heroku link for ddeployed project can be found at: https://sample-blog-cms.herokuapp.com/
 
 For any questions or to report issues, email me at: nidaqg@gmail.com
