@@ -81,7 +81,7 @@ SOFTWARE.
 
 ## Questions
 
-The repo for this project can be found here: 
+The repo for this project can be found here: https://github.com/nidaqg/CMS-blog-sample
 
 Heroku link for ddeployed project can be found at: 
 
